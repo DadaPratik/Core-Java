@@ -1,5 +1,9 @@
 package exception;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+
 public class ThrowingException {
    public static double calculatePay(double hours, double payRate) throws NegativeInputException {
 
@@ -13,5 +17,5 @@ public class ThrowingException {
 
 
    }
-
 }
+
