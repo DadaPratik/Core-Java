@@ -14,13 +14,25 @@ public class Reduce {
     );
 
     public static void main(String[] args) {
-        reduceDemo();
+        // reduceDemo();
+        intReducedDemo();
     }
 
     public static void reduceDemo() {
         System.out.println(names.stream()
                 .sorted()
                 .reduce("", (a, b) -> a + " | " + b));
+
+    }
+
+    public static void intReducedDemo() {
+        List<Integer> numbers = List.of(2, 4, 6, 8, 10);
+        System.out.println(
+                numbers.stream()
+                        .reduce(0, (a, b) -> a + b)
+
+        );
+
 
     }
 }
